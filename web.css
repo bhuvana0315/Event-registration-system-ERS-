@@ -1,0 +1,69 @@
+#h1 {
+    font-family: cursive;
+    font-style: normal;
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+    margin-top: 2%;
+}
+
+table {
+   font-family: cursive;
+    color: blue;
+    font-size: 20px;
+    font-style: normal;
+    border-collapse: collapse;
+   margin-left:8%;
+}
+
+table.inner {
+    border: 10px
+}
+td{
+padding:7px;
+}
+input[type=text],
+input[type=email],
+input[type=number] {
+    width: 90%;
+    padding: 6px 12px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit],
+input[type=reset] {
+    width: 20%;
+    padding: 8px 12px;
+    margin: 5px 0;
+    box-sizing: border-box;
+   color:white;
+  background:#9293DE ;
+font-size:18px;
+}
+input[type=submit]:hover {
+  background-color: #D6E3F2 ;
+  color: #4c9ed9;
+}
+input[type=reset]:hover {
+ background-color: #D6E3F2 ;
+  color: #4c9ed9;
+}
+form {
+    padding: 5px;
+    background-color: antiquewhite;
+    border-radius: 5%;
+    border:2px dashed purple;
+    width:fit-content;
+}
+
+form label {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 200;
+    font-family: 'cursive';
+}

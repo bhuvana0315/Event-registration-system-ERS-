@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Free registration</title>
+<link rel='stylesheet' href='free.css'> 
+   <style media="screen">
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+ min-height: 100vh;
+ background: white;
+ color: white;
+ background-size: cover;
+ background-position: center;
+}
+h1{
+  text-align: center;
+  font-weight: 500;
+  font-size: 25px;
+  padding-bottom: 13px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+.side-bar{
+ background: #1b1a1b;
+ backdrop-filter: blur(15px);
+ width: 250px;
+ height: 100vh;
+ position: fixed;
+ top: 0;
+ left: -250px;
+ overflow-y: auto;
+ transition: 0.6s ease;
+ transition-property: left;
+}
+.side-bar::-webkit-scrollbar {
+  width: 0px;
+}
+.side-bar.active{
+ left: 0;
+}
+.side-bar .menu{
+ width: 100%;
+ margin-top: 30px;
+}
+
+.side-bar .menu .item{
+ position: relative;
+ cursor: pointer;
+}
+
+.side-bar .menu .item a{
+ color: #fff;
+ font-size: 16px;
+ text-decoration: none;
+ display: block;
+ padding: 5px 30px;
+ line-height: 60px;
+}
+
+.side-bar .menu .item a:hover{
+ background: #33363a;
+ transition: 0.3s ease;
+}
+
+.side-bar .menu .item i{
+ margin-right: 15px;
+}
+
+.side-bar .menu .item a .dropdown{
+ position: absolute;
+ right: 0;
+ margin: 20px;
+ transition: 0.3s ease;
+}
+
+.side-bar .menu .item .sub-menu{
+ background: #262627;
+ display: none;
+}
+
+.side-bar .menu .item .sub-menu a{
+ padding-left: 80px;
+}
+
+.rotate{
+ transform: rotate(90deg);
+}
+
+.close-btn{
+ position: absolute;
+ color: #fff;
+
+ font-size: 23px;
+ right:  0px;
+ margin: 15px;
+ cursor: pointer;
+}
+
+.menu-btn{
+ position: absolute;
+ color: rgb(0, 0, 0);
+ font-size: 35px;
+ margin: 25px;
+ cursor: pointer;
+}
+
+.main{
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 50px;
+}
+
+.main h1{
+ color: rgba(255, 255, 255, 0.8);
+ font-size: 60px;
+ text-align: center;
+ line-height: 80px;
+}
+
+
+@media (max-width: 900px){
+ .main h1{
+   font-size: 40px;
+   line-height: 60px;
+ }
+}
+#img1{
+  width: 100px;
+  margin: 15px;
+  border-radius: 50%;
+  margin-left: 70px;
+  border: 3px solid #b4b8b9;
+}
+header{
+  background: #33363a;
+}
+
+   </style>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+ </head>
+ <body>
+  <header><img src="Title_logo.jfif" width="100%" height="40%" id="header">
+    </header>
+   <div class="menu-btn">
+     <i class="fas fa-bars"></i> Menu
+   </div>
+   <br>
+   <br>
+   <br>
+<div align="center">
+  <form method="POST" action="https://api.sheetmonkey.io/form/u7VLcsL6Hd34SJBvJmK89k">
+    <h1 id="h1">Event Registration</h1>
+    <table align="center">
+        <!--------------------- First Name ------------------------------------------>
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" name="FirstName" maxlength="20" placeholder="First Name" required>
+                (Max 20 Characters)
+            </td>
+        </tr>
+        <!------------------------ Last Name --------------------------------------->
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" name="LastName" maxlength="20" placeholder="Last name" required>
+                (Max 20 Characters)
+            </td>
+        </tr>
+        <!-------------------------- Email ID ------------------------------------->
+        <tr>
+            <td>Email ID</td>
+            <td><input type="email" name="EmailID" maxlength="20" placeholder="sample@gmail.com" required></td>
+        </tr>
+        <!-------------------------- Mobile Number ------------------------------------->
+        <tr>
+            <td>Mobile Number</td>
+            <td>
+                <input type="text" name="MobileNumber" maxlength="10" placeholder="7842xxxxxx" required>
+                (Max 10 Digits)
+            </td>
+        </tr>
+        <!---------------------- Gender ------------------------------------->
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="Gender" value="Male">
+                Male
+                <input type="radio" name="Gender" value="Female">
+                Female
+            </td>
+        </tr>
+        <!--------------------------Date Of Birth----------------------------------->
+        <tr>
+            <td>Date of Birth(DOB)</td>
+            <td>
+                <input type="date" name="DOB" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Name of the College</td>
+            <td>
+                <input type="text" name="College" value="" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Name of the Degree</td>
+            <td>
+                <input type="text" name="Degree" value="" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Branch</td>
+            <td>
+                <input type="text" name="Branch" value="" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Year of study</td>
+            <td>
+                <input type="text" name="Year" value="" required>
+            </td>
+        </tr>
+        <!-------------------------- City ------------------------------------->
+        <tr>
+            <td>City</td>
+            <td><input type="text" name="City"  placeholder="city" required>       
+            </td>
+        </tr>
+        <!----- -------------------- Pin Code-------------------------------------->
+        <tr>
+            <td>Pin Code</td>
+            <td><input type="text" name="PinCode" maxlength="6" placeholder="5xxxx3" required>
+                (Max 6 digits)
+            </td>
+        </tr>
+        <!---------------------------- State ----------------------------------->
+        <tr>
+            <td>State</td>
+            <td><input type="text" name="State"  placeholder="State" required>
+            </td>
+        </tr>
+        <!------------------------------ Country --------------------------------->
+        <tr>
+            <td>Country</td>
+            <td><input type="text" name="Country" placeholder="India" required></td>
+        </tr>
+
+        <tr>
+            <td>List of events<br /></td>
+            <td>
+                <input type="checkbox" name="Blind Coding" value="Blind Coding" />&nbsp;&nbsp; Blind Coding (Technical)
+                <br>
+                <input type="checkbox" name="Bug Detection" value="Bug Detection" />&nbsp;&nbsp;Bug Detection (Technical)
+                <br>
+                <input type="checkbox" name="Project Expo" value="Project Expo" />&nbsp;&nbsp;Project Expo (Technical)
+                <br>
+                <input type="checkbox" name="Hackathon" value="Hackathon" />&nbsp;&nbsp;Hackathon (Technical)
+                <br>
+                <input type="checkbox" name="Technical Quiz" value="Technical Quiz" />&nbsp;&nbsp;Technical Quiz (Technical)
+                <br>
+                <input type="checkbox" name="Aptitude & Quantative Test"
+                    value="Aptitude & Quantative Test" />&nbsp;&nbsp;Aptitude &
+                Quantitative Test
+                (Non-Technical)
+                <br>
+                <input type="checkbox" name="Blind Artist"
+                    value="Blind Artist" />&nbsp;&nbsp;Blind Artist
+                (Non-Technical)
+                <br>
+<input type="checkbox" name="Bleep"
+                    value="Bleep" />&nbsp;&nbsp;Bleep
+                (Non-Technical)
+                <br>
+                <input type="checkbox" name="General Knowledge" value="General Knowledge" />&nbsp;&nbsp;General Knowledge
+                (Non-Technical)
+                <br>
+                <input type="checkbox" name="Article writing" value="Article writing" />&nbsp;&nbsp;Article
+                writing(Non-Technical)
+                <br>
+                <input type="checkbox" name="Poster Presentation" value="Poster Presentation" />&nbsp;&nbsp;Poster Presentation
+                (Non-Technical)
+                <br>
+      
+                <input type="checkbox" name="Singing" value="Singing" />&nbsp;&nbsp;Singing(Non-Technical)
+                <br>
+                <input type="checkbox" name="Business ideas" value="Business ideas" />&nbsp;&nbsp;Business ideas(Non-Technical)
+                <br>
+            </td>
+        </tr>
+        <!----------------------- Submit and Reset ------------------------------->
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Submit">&nbsp;&nbsp;
+                <input type="reset" value="Reset" id="reset">
+            </td>
+        </tr>
+    </table>
+</form>
+<footer><center><img src="footer.jpeg" width=50%></center></footer>
+</div>
+   <div class="side-bar">
+     <header>
+     <div class="close-btn">
+       <i class="fas fa-times"></i>
+     </div>
+     <img src="gvp_logo.jfif" alt="no image" id="img1">
+          <h1>GVPCEW</h1>
+        </header>
+     <div class="menu">
+       <div class="item"><a href="index.html"><i class="fas fa-home"></i>Home</a></div>
+       <div class="item">
+         <a class="sub-btn"><i class="fas fa-file"></i>Registration<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="free.html" class="sub-item">Free</a>
+           <a href="paid.html" class="sub-item">Paid</a>
+         </div>
+       </div>
+       <div class="item">
+         <a class="sub-btn"><i class="fas fa-users"></i>Clubs<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="gdsc.html" class="sub-item">GDSC</a>
+           <a href="picsl.html" class="sub-item">PICSL</a>
+           <a href="coscengers.html" class="sub-item">COSCENGERS</a>
+         </div>
+         <div class="item">
+         <a class="sub-btn"><i class="fas fa-user-friends"></i>Societies<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="ieee.html" class="sub-item">IEEE</a>
+           <a href="csi.html" class="sub-item">CSI</a>
+         </div>
+       </div>
+       <div class="item"><a href="contact.html"><i class="fas fa-phone-alt"></i>Contact us</a></div>
+     <div class="item"><a href="https://datastudio.google.com/reporting/2a9ccca3-d740-45a5-b6e9-de92f288e394"><i class="fas fa-file"></i>Reports</a></div>
+</div>
+   </div>
+
+   <script type="text/javascript">
+   $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+     });
+
+     //jquery for expand and collapse the sidebar
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css("visibility", "hidden");
+     });
+
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css("visibility", "visible");
+     });
+   });
+   </script>
+ </body>
+</html>

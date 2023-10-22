@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Free registration</title>
+   <style media="screen">
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Poppins", sans-serif;
+}
+
+body{
+ min-height: 100vh;
+ background: white;
+ color: white;
+ background-size: cover;
+ background-position: center;
+}
+
+.side-bar{
+ background: #1b1a1b;
+ backdrop-filter: blur(15px);
+ width: 250px;
+ height: 100vh;
+ position: fixed;
+ top: 0;
+ left: -250px;
+ overflow-y: auto;
+ transition: 0.6s ease;
+ transition-property: left;
+}
+.side-bar::-webkit-scrollbar {
+  width: 0px;
+}
+.side-bar.active{
+ left: 0;
+}
+h1{
+  text-align: center;
+  font-weight: 500;
+  font-size: 25px;
+  padding-bottom: 13px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+
+.side-bar .menu{
+ width: 100%;
+ margin-top: 30px;
+}
+
+.side-bar .menu .item{
+ position: relative;
+ cursor: pointer;
+}
+
+.side-bar .menu .item a{
+ color: #fff;
+ font-size: 16px;
+ text-decoration: none;
+ display: block;
+ padding: 5px 30px;
+ line-height: 60px;
+}
+
+.side-bar .menu .item a:hover{
+ background: #33363a;
+ transition: 0.3s ease;
+}
+
+.side-bar .menu .item i{
+ margin-right: 15px;
+}
+
+.side-bar .menu .item a .dropdown{
+ position: absolute;
+ right: 0;
+ margin: 20px;
+ transition: 0.3s ease;
+}
+
+.side-bar .menu .item .sub-menu{
+ background: #262627;
+ display: none;
+}
+
+.side-bar .menu .item .sub-menu a{
+ padding-left: 80px;
+}
+
+.rotate{
+ transform: rotate(90deg);
+}
+
+.close-btn{
+ position: absolute;
+ color: #fff;
+
+ font-size: 23px;
+ right:  0px;
+ margin: 15px;
+ cursor: pointer;
+}
+
+.menu-btn{
+ position: absolute;
+ color: rgb(0, 0, 0);
+ font-size: 35px;
+ margin: 25px;
+ cursor: pointer;
+}
+
+.main{
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 50px;
+}
+
+.main h1{
+ color: rgba(255, 255, 255, 0.8);
+ font-size: 60px;
+ text-align: center;
+ line-height: 80px;
+}
+
+@media (max-width: 900px){
+ .main h1{
+   font-size: 40px;
+   line-height: 60px;
+ }
+}
+#img1{
+  width: 100px;
+  margin: 15px;
+  border-radius: 50%;
+  margin-left: 70px;
+  border: 3px solid #b4b8b9;
+}
+header{
+  background: #33363a;
+}
+
+   </style>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel='stylesheet' href='arts.css'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+ </head>
+ <body>
+  <header><img src="Title_logo.jfif" width="100%" height="40%" id="header">
+    </header>
+   <div class="menu-btn">
+     <i class="fas fa-bars"></i> Menu
+   </div><br><br><br>
+ <center>
+        <h1 id="h1">COSCENGERS</h1><img src='coscengers.jpeg' align='center' width=15%><br><br><br>
+  <marquee>
+        <p>
+            The following are the events conducted by COSCENGERS:
+            <b><i>1) Poster Presentation
+                    2) Article Writing
+                    3) General Knowledge
+                    4) Singing
+                    5) Business ideas</b></i>
+        </p></marquee>
+        <br><i class='blink'>Top three winners will be awarded with cash price.(detailed information will be updated soon).All
+          participants will get participation e-certificates.</i>
+    </center>
+    <div class="row">
+    <div class="col">
+        <h2 align="center">Poster Presentation</h2><br>
+        <img class="img"
+            src="https://www.bing.com/th?id=OIP.g08OqZG6PAbui5bZGJE1_gHaEr&w=197&h=124&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2">
+            <br><br><div class='quiz'>
+            <p>It is a individual-based and offline competition (duration:1hr 30mins). Poster presentation can be done manually or graphically.You are
+                required to make poster related to latest technologies.
+                
+            </p>
+        </div>
+    </div>
+    <div class="col">
+        <h2 align="center">Article Writing</h2><br>
+        <img class="img"
+            src="https://th.bing.com/th/id/OIP.E0Bj6Z8oGgHGXl7YrwwLLwHaF6?w=203&h=162&c=7&r=0&o=5&dpr=1.25&pid=1.7">
+            <br><br><div class='quiz'>
+            <p>It is a individual & offline competition(1hr 30mins).
+              You are required to write an article related to latest technologies (can use references).
+              You should follow IEEE column format.
+            </p>
+        </div>
+    </div>
+    <div class="col">
+        <h2 align="center">Singing</h2><br>
+        <img id="img" src="sing.jfif"><div class='quiz'><br><br>
+            <p>It is a individual-based competition.Geners are folk and patriotic.You can perform
+              a mashup song if you choose folk. Maximum duration is 5 minutes.
+                </p>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col">
+        <h2 align="center">Business Ideas</h2><br>
+        <img class="img"
+            src="https://th.bing.com/th/id/OIP.KD1AMcSoqPT3gCH1ADMaIQHaDt?w=312&h=175&c=7&r=0&o=5&dpr=1.25&pid=1.7">
+        <br><br><div class='quiz'>
+            <p>It is a individual-based competition.Any type of business ideas are welcome to showcase<br><br>
+                
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="col">
+        <h2 align="center">General Knowledge</h2><br>
+        <img class="img" src="https://th.bing.com/th/id/OIP.Ek2-lUHL751-QWfRE3yPfQHaD4?pid=ImgDet&rs=1">
+        <br><br><div class='quiz'>
+            <p>It is a individual-based competition.Topics include <b>Current
+                    affairs,Politics,Economics,Film</b>.
+                </p>
+        </div>
+    </div>
+   </div>
+
+   <div class="side-bar">
+     <header>
+     <div class="close-btn">
+       <i class="fas fa-times"></i>
+     </div>
+     <img src="gvp_logo.jfif" alt="no image" id="img1">
+          <h1>GVPCEW</h1>
+        </header>
+     
+           <div class="menu">
+       <div class="item"><a href="index.html"><i class="fas fa-home"></i>Home</a></div>
+       <div class="item">
+         <a class="sub-btn"><i class="fas fa-file"></i>Registration<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="free.html" class="sub-item">Free</a>
+           <a href="paid.html" class="sub-item">Paid</a>
+         </div>
+       </div>
+       <div class="item">
+         <a class="sub-btn"><i class="fas fa-users"></i>Clubs<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="gdsc.html" class="sub-item">GDSC</a>
+           <a href="picsl.html" class="sub-item">PICSL</a>
+           <a href="coscengers.html" class="sub-item">COSCENGERS</a>
+         </div>
+         <div class="item">
+         <a class="sub-btn"><i class="fas fa-user-friends"></i>Societies<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="ieee.html" class="sub-item">IEEE</a>
+           <a href="csi.html" class="sub-item">CSI</a>
+         </div>
+       </div>
+       <div class="item"><a href="contact.html"><i class="fas fa-phone-alt"></i>Contact us</a></div>
+     <div class="item"><a href="https://datastudio.google.com/reporting/2a9ccca3-d740-45a5-b6e9-de92f288e394"><i class="fas fa-file"></i>Reports</a></div>
+</div>
+   </div>
+
+   <script type="text/javascript">
+   $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+     });
+
+     //jquery for expand and collapse the sidebar
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css("visibility", "hidden");
+     });
+
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css("visibility", "visible");
+     });
+   });
+   </script>
+ </body>
+</html>
